@@ -66,8 +66,15 @@ This will:
 Start the API server with:
 
 ```bash
-python src/main.py
+python main.py
 ```
+
+OR
+
+```bash
+python query_assistant.py
+```
+
 
 The API will be available at `http://localhost:8000`.
 

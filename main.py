@@ -10,7 +10,7 @@ import yaml
 from fastapi import FastAPI
 from dotenv import load_dotenv
 
-from src.core.query_router import QueryRouter
+from src.core.query_router import StructuredQueryRouter
 from src.interfaces.api import setup_api_routes
 from src.utils.logging import setup_logging
 
@@ -39,7 +39,7 @@ def create_app():
         raise ValueError("GROQ_API_KEY is required")
     
     # Initialize the query router
-    query_router = QueryRouter()
+    query_router = StructuredQueryRouter()
     logger.info("Query router initialized")
     
     # Create FastAPI app

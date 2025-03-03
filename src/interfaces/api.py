@@ -8,7 +8,7 @@ from fastapi import FastAPI, HTTPException, Depends, Body, Query, status
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
-from src.core.query_router import QueryRouter
+from src.core.query_router import StructuredQueryRouter
 
 logger = logging.getLogger(__name__)
 
@@ -34,7 +34,7 @@ class HealthResponse(BaseModel):
     version: str = Field(..., description="Service version")
     agents: List[str] = Field(..., description="Available agents")
 
-def setup_api_routes(app: FastAPI, query_router: QueryRouter):
+def setup_api_routes(app: FastAPI, query_router: StructuredQueryRouter):
     """
     Set up API routes for the FastAPI application.
     

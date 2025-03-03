@@ -4,3 +4,4 @@
 2025-03-02 12:16:13,162 - root - ERROR - ingest_script.py:77 - Failed to process order domain data
 2025-03-02 12:16:13,162 - root - ERROR - ingest_script.py:122 - Failed to process domains: billing, technical, order
 2025-03-02 13:02:34,615 - __main__ - ERROR - cli_client.py:81 - Error processing query: 'bool' object has no attribute 'substitute'
+2025-03-03 11:26:21,164 - __main__ - ERROR - query_1.py:393 - Failed to visualize graph: failed to execute PosixPath('dot'), make sure the Graphviz executables are on your systems' PATH

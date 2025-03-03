@@ -609,3 +609,650 @@
 2025-03-03 10:33:49,103 - src.agents.billing_agent - INFO - billing_agent.py:127 - Retrieved 5 documents
 2025-03-03 10:33:50,298 - httpx - INFO - _client.py:1013 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 2025-03-03 10:33:50,299 - src.interfaces.api - INFO - api.py:80 - Query processed by billing agent in 6.24s
+2025-03-03 10:57:38,794 - main - INFO - main.py:30 - Starting Multi-Agent System
+2025-03-03 10:57:38,798 - main - INFO - main.py:34 - Configuration loaded
+2025-03-03 10:57:38,798 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 10:57:38,798 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 10:57:38,939 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 10:57:38,940 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 10:57:38,940 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 10:57:39,009 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 10:57:39,010 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 10:57:39,010 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 10:57:39,080 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 10:57:39,155 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 10:57:39,155 - main - INFO - main.py:43 - Query router initialized
+2025-03-03 10:57:39,158 - src.interfaces.api - INFO - api.py:101 - API routes configured
+2025-03-03 10:57:39,158 - main - INFO - main.py:54 - API routes configured
+2025-03-03 10:59:43,530 - main - INFO - main.py:30 - Starting Multi-Agent System
+2025-03-03 10:59:43,534 - main - INFO - main.py:34 - Configuration loaded
+2025-03-03 10:59:43,534 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 10:59:43,534 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 10:59:43,667 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 10:59:43,668 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 10:59:43,668 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 10:59:43,743 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 10:59:43,743 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 10:59:43,743 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 10:59:43,821 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 10:59:43,900 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 10:59:43,900 - main - INFO - main.py:43 - Query router initialized
+2025-03-03 10:59:43,904 - src.interfaces.api - INFO - api.py:101 - API routes configured
+2025-03-03 10:59:43,904 - main - INFO - main.py:54 - API routes configured
+2025-03-03 11:00:04,375 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:00:04,375 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:00:04,518 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:00:04,519 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:00:04,519 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:00:04,611 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:00:04,618 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:00:04,618 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:00:04,714 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:00:04,812 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:00:04,812 - __main__ - INFO - query_1.py:43 - Query router initialized
+2025-03-03 11:01:13,703 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:01:13,704 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:01:13,860 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:01:13,860 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:01:13,861 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:01:13,963 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:01:13,963 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:01:13,964 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:01:14,065 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:01:14,164 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:01:14,164 - __main__ - INFO - query_1.py:44 - Query router initialized
+2025-03-03 11:01:14,244 - main - INFO - main.py:30 - Starting Multi-Agent System
+2025-03-03 11:01:14,251 - main - INFO - main.py:34 - Configuration loaded
+2025-03-03 11:01:14,251 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:01:14,252 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:01:14,408 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:01:14,408 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:01:14,409 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:01:14,503 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:01:14,503 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:01:14,503 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:01:14,595 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:01:14,679 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:01:14,679 - main - INFO - main.py:43 - Query router initialized
+2025-03-03 11:01:14,682 - src.interfaces.api - INFO - api.py:101 - API routes configured
+2025-03-03 11:01:14,682 - main - INFO - main.py:54 - API routes configured
+2025-03-03 11:01:32,017 - main - INFO - main.py:30 - Starting Multi-Agent System
+2025-03-03 11:01:32,022 - main - INFO - main.py:34 - Configuration loaded
+2025-03-03 11:01:32,022 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:01:32,023 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:01:32,165 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:01:32,165 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:01:32,165 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:01:32,268 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:01:32,268 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:01:32,268 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:01:32,362 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:01:32,450 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:01:32,450 - main - INFO - main.py:43 - Query router initialized
+2025-03-03 11:01:32,454 - src.interfaces.api - INFO - api.py:101 - API routes configured
+2025-03-03 11:01:32,454 - main - INFO - main.py:54 - API routes configured
+2025-03-03 11:01:37,719 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:01:37,719 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:01:37,870 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:01:37,871 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:01:37,871 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:01:37,975 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:01:37,975 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:01:37,976 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:01:38,079 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:01:38,178 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:01:38,178 - __main__ - INFO - query_1.py:45 - Query router initialized
+2025-03-03 11:01:38,213 - main - INFO - main.py:30 - Starting Multi-Agent System
+2025-03-03 11:01:38,217 - main - INFO - main.py:34 - Configuration loaded
+2025-03-03 11:01:38,218 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:01:38,218 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:01:38,366 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:01:38,366 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:01:38,367 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:01:38,461 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:01:38,461 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:01:38,462 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:01:38,557 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:01:38,651 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:01:38,651 - main - INFO - main.py:43 - Query router initialized
+2025-03-03 11:01:38,655 - src.interfaces.api - INFO - api.py:101 - API routes configured
+2025-03-03 11:01:38,655 - main - INFO - main.py:54 - API routes configured
+2025-03-03 11:01:58,566 - main - INFO - main.py:30 - Starting Multi-Agent System
+2025-03-03 11:01:58,570 - main - INFO - main.py:34 - Configuration loaded
+2025-03-03 11:01:58,570 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:01:58,570 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:01:58,701 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:01:58,701 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:01:58,702 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:01:58,779 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:01:58,779 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:01:58,779 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:01:58,878 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:01:58,978 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:01:58,978 - main - INFO - main.py:43 - Query router initialized
+2025-03-03 11:01:58,982 - src.interfaces.api - INFO - api.py:101 - API routes configured
+2025-03-03 11:01:58,982 - main - INFO - main.py:54 - API routes configured
+2025-03-03 11:02:57,877 - main - INFO - main.py:30 - Starting Multi-Agent System
+2025-03-03 11:02:57,881 - main - INFO - main.py:34 - Configuration loaded
+2025-03-03 11:02:57,881 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:02:57,882 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:02:58,028 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:02:58,028 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:02:58,028 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:02:58,121 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:02:58,121 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:02:58,122 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:02:58,220 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:02:58,314 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:02:58,314 - main - INFO - main.py:43 - Query router initialized
+2025-03-03 11:02:58,317 - src.interfaces.api - INFO - api.py:101 - API routes configured
+2025-03-03 11:02:58,317 - main - INFO - main.py:54 - API routes configured
+2025-03-03 11:03:05,844 - main - INFO - main.py:30 - Starting Multi-Agent System
+2025-03-03 11:03:05,848 - main - INFO - main.py:34 - Configuration loaded
+2025-03-03 11:03:05,849 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:03:05,849 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:03:06,023 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:03:06,023 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:03:06,023 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:03:06,132 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:03:06,132 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:03:06,132 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:03:06,235 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:03:06,348 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:03:06,348 - main - INFO - main.py:43 - Query router initialized
+2025-03-03 11:03:06,351 - src.interfaces.api - INFO - api.py:101 - API routes configured
+2025-03-03 11:03:06,351 - main - INFO - main.py:54 - API routes configured
+2025-03-03 11:03:48,508 - main - INFO - main.py:30 - Starting Multi-Agent System
+2025-03-03 11:03:48,512 - main - INFO - main.py:34 - Configuration loaded
+2025-03-03 11:03:48,512 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:03:48,512 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:03:48,644 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:03:48,644 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:03:48,644 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:03:48,723 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:03:48,724 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:03:48,724 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:03:48,797 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:03:48,885 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:03:48,885 - main - INFO - main.py:43 - Query router initialized
+2025-03-03 11:03:48,888 - src.interfaces.api - INFO - api.py:101 - API routes configured
+2025-03-03 11:03:48,888 - main - INFO - main.py:54 - API routes configured
+2025-03-03 11:04:16,416 - main - INFO - main.py:30 - Starting Multi-Agent System
+2025-03-03 11:04:16,423 - main - INFO - main.py:34 - Configuration loaded
+2025-03-03 11:04:16,424 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:04:16,424 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:04:16,591 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:04:16,591 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:04:16,592 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:04:16,687 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:04:16,687 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:04:16,688 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:04:16,787 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:04:16,883 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:04:16,883 - main - INFO - main.py:43 - Query router initialized
+2025-03-03 11:04:16,886 - src.interfaces.api - INFO - api.py:101 - API routes configured
+2025-03-03 11:04:16,887 - main - INFO - main.py:54 - API routes configured
+2025-03-03 11:04:19,850 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:04:19,851 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:04:19,987 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:04:19,987 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:04:19,988 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:04:20,083 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:04:20,083 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:04:20,084 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:04:20,162 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:04:20,247 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:04:20,247 - __main__ - INFO - query_1.py:48 - Query router initialized
+2025-03-03 11:04:43,468 - main - INFO - main.py:30 - Starting Multi-Agent System
+2025-03-03 11:04:43,473 - main - INFO - main.py:34 - Configuration loaded
+2025-03-03 11:04:43,473 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:04:43,474 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:04:43,648 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:04:43,648 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:04:43,648 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:04:43,735 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:04:43,735 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:04:43,736 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:04:43,825 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:04:43,912 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:04:43,913 - main - INFO - main.py:43 - Query router initialized
+2025-03-03 11:04:43,916 - src.interfaces.api - INFO - api.py:101 - API routes configured
+2025-03-03 11:04:43,916 - main - INFO - main.py:54 - API routes configured
+2025-03-03 11:05:19,478 - main - INFO - main.py:30 - Starting Multi-Agent System
+2025-03-03 11:05:19,483 - main - INFO - main.py:34 - Configuration loaded
+2025-03-03 11:05:19,483 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:05:19,483 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:05:19,624 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:05:19,624 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:05:19,625 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:05:19,718 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:05:19,718 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:05:19,719 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:05:19,798 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:05:19,879 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:05:19,879 - main - INFO - main.py:43 - Query router initialized
+2025-03-03 11:05:19,883 - src.interfaces.api - INFO - api.py:101 - API routes configured
+2025-03-03 11:05:19,883 - main - INFO - main.py:54 - API routes configured
+2025-03-03 11:05:37,084 - main - INFO - main.py:30 - Starting Multi-Agent System
+2025-03-03 11:05:37,088 - main - INFO - main.py:34 - Configuration loaded
+2025-03-03 11:05:37,088 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:05:37,088 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:05:37,222 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:05:37,222 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:05:37,222 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:05:37,326 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:05:37,326 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:05:37,326 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:05:37,431 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:05:37,523 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:05:37,523 - main - INFO - main.py:43 - Query router initialized
+2025-03-03 11:05:37,526 - src.interfaces.api - INFO - api.py:101 - API routes configured
+2025-03-03 11:05:37,526 - main - INFO - main.py:54 - API routes configured
+2025-03-03 11:06:19,466 - main - INFO - main.py:30 - Starting Multi-Agent System
+2025-03-03 11:06:19,471 - main - INFO - main.py:34 - Configuration loaded
+2025-03-03 11:06:19,471 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:06:19,471 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:06:19,622 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:06:19,622 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:06:19,622 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:06:19,720 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:06:19,720 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:06:19,721 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:06:19,813 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:06:19,900 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:06:19,900 - main - INFO - main.py:43 - Query router initialized
+2025-03-03 11:06:19,903 - src.interfaces.api - INFO - api.py:101 - API routes configured
+2025-03-03 11:06:19,903 - main - INFO - main.py:54 - API routes configured
+2025-03-03 11:06:21,787 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:06:21,787 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:06:21,931 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:06:21,931 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:06:21,931 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:06:22,014 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:06:22,015 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:06:22,015 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:06:22,094 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:06:22,180 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:06:22,181 - __main__ - INFO - query_1.py:47 - Query router initialized
+2025-03-03 11:07:26,305 - main - INFO - main.py:30 - Starting Multi-Agent System
+2025-03-03 11:07:26,309 - main - INFO - main.py:34 - Configuration loaded
+2025-03-03 11:07:26,309 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:07:26,309 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:07:26,463 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:07:26,463 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:07:26,464 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:07:26,561 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:07:26,561 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:07:26,561 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:07:26,685 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:07:26,787 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:07:26,787 - main - INFO - main.py:43 - Query router initialized
+2025-03-03 11:07:26,790 - src.interfaces.api - INFO - api.py:101 - API routes configured
+2025-03-03 11:07:26,790 - main - INFO - main.py:54 - API routes configured
+2025-03-03 11:07:29,531 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:07:29,531 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:07:29,674 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:07:29,674 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:07:29,674 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:07:29,763 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:07:29,764 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:07:29,764 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:07:29,847 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:07:29,932 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:07:29,932 - __main__ - INFO - query_1.py:44 - Query router initialized
+2025-03-03 11:07:40,692 - src.core.query_router - INFO - query_router.py:247 - Classifying query: my bill amout is too high
+2025-03-03 11:07:42,337 - httpx - INFO - _client.py:1013 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-03 11:07:42,346 - src.core.query_router - INFO - query_router.py:326 - Query classified as billing with confidence 0.9
+2025-03-03 11:07:42,347 - __main__ - INFO - query_1.py:56 - Classified query as billing with confidence 0.90
+2025-03-03 11:07:42,348 - src.core.query_router - INFO - query_router.py:247 - Classifying query: my bill amout is too high
+2025-03-03 11:07:43,476 - httpx - INFO - _client.py:1013 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-03 11:07:43,478 - src.core.query_router - INFO - query_router.py:326 - Query classified as billing with confidence 0.9
+2025-03-03 11:07:43,479 - src.agents.billing_agent - INFO - billing_agent.py:140 - Processing billing query: my bill amout is too high
+2025-03-03 11:07:43,479 - src.agents.billing_agent - INFO - billing_agent.py:89 - Retrieving documents for query: my bill amout is too high
+2025-03-03 11:07:43,479 - src.utils.nlp_utils - INFO - nlp_utils.py:30 - Loading embedding model: all-MiniLM-L6-v2
+2025-03-03 11:07:43,479 - sentence_transformers.SentenceTransformer - INFO - SentenceTransformer.py:106 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-03 11:07:47,328 - sentence_transformers.SentenceTransformer - INFO - SentenceTransformer.py:212 - Use pytorch device_name: cpu
+2025-03-03 11:07:47,331 - src.utils.nlp_utils - INFO - nlp_utils.py:32 - Embedding model loaded with dimension 384
+2025-03-03 11:07:47,351 - src.agents.billing_agent - INFO - billing_agent.py:127 - Retrieved 5 documents
+2025-03-03 11:07:48,531 - httpx - INFO - _client.py:1013 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-03 11:07:48,533 - __main__ - INFO - query_1.py:75 - Query processed by billing agent
+2025-03-03 11:10:16,725 - main - INFO - main.py:30 - Starting Multi-Agent System
+2025-03-03 11:10:16,729 - main - INFO - main.py:34 - Configuration loaded
+2025-03-03 11:10:16,730 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:10:16,730 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:10:16,913 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:10:16,913 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:10:16,914 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:10:17,022 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:10:17,023 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:10:17,023 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:10:17,117 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:10:17,206 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:10:17,207 - main - INFO - main.py:43 - Query router initialized
+2025-03-03 11:10:17,210 - src.interfaces.api - INFO - api.py:101 - API routes configured
+2025-03-03 11:10:17,210 - main - INFO - main.py:54 - API routes configured
+2025-03-03 11:10:21,193 - src.core.query_router - INFO - query_router.py:247 - Classifying query: 
+2025-03-03 11:10:22,119 - httpx - INFO - _client.py:1013 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-03 11:10:22,120 - src.core.query_router - ERROR - query_router.py:331 - Error in classification: 1 validation error for QueryClassification
+  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='There is no query provid...te JSON classification.', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/json_invalid
+2025-03-03 11:10:22,121 - src.core.query_router - WARNING - query_router.py:335 - Using fallback classification: technical
+2025-03-03 11:10:22,121 - __main__ - INFO - query_1.py:56 - Classified query as technical with confidence 0.60
+2025-03-03 11:10:22,122 - src.core.query_router - INFO - query_router.py:247 - Classifying query: 
+2025-03-03 11:10:22,411 - main - INFO - main.py:30 - Starting Multi-Agent System
+2025-03-03 11:10:22,415 - main - INFO - main.py:34 - Configuration loaded
+2025-03-03 11:10:22,415 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:10:22,415 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:10:22,548 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:10:22,549 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:10:22,549 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:10:22,633 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:10:22,633 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:10:22,634 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:10:22,721 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:10:22,812 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:10:22,812 - main - INFO - main.py:43 - Query router initialized
+2025-03-03 11:10:22,815 - src.interfaces.api - INFO - api.py:101 - API routes configured
+2025-03-03 11:10:22,816 - main - INFO - main.py:54 - API routes configured
+2025-03-03 11:10:22,819 - httpx - INFO - _client.py:1013 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-03 11:10:22,820 - src.core.query_router - ERROR - query_router.py:331 - Error in classification: 1 validation error for QueryClassification
+  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='There is no query provid...te JSON classification.', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/json_invalid
+2025-03-03 11:10:22,820 - src.core.query_router - WARNING - query_router.py:335 - Using fallback classification: technical
+2025-03-03 11:10:22,820 - src.agents.technical_agent - INFO - technical_agent.py:139 - Processing technical query: 
+2025-03-03 11:10:22,820 - src.agents.technical_agent - INFO - technical_agent.py:89 - Retrieving documents for query: 
+2025-03-03 11:10:22,836 - src.agents.technical_agent - INFO - technical_agent.py:126 - Retrieved 5 documents
+2025-03-03 11:10:22,836 - src.core.response_generator - INFO - response_generator.py:32 - Generating response for technical query with 5 documents
+2025-03-03 11:10:24,068 - httpx - INFO - _client.py:1013 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-03 11:10:24,070 - __main__ - INFO - query_1.py:75 - Query processed by technical agent
+2025-03-03 11:10:33,472 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:10:33,472 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:10:33,612 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:10:33,612 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:10:33,616 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:10:33,710 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:10:33,710 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:10:33,710 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:10:33,806 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:10:33,901 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:10:33,901 - __main__ - INFO - query_1.py:44 - Query router initialized
+2025-03-03 11:10:48,109 - src.core.query_router - INFO - query_router.py:247 - Classifying query: my order is not received 
+2025-03-03 11:10:49,417 - httpx - INFO - _client.py:1013 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-03 11:10:49,426 - src.core.query_router - INFO - query_router.py:326 - Query classified as order with confidence 0.9
+2025-03-03 11:10:49,426 - __main__ - INFO - query_1.py:56 - Classified query as order with confidence 0.90
+2025-03-03 11:10:49,427 - src.core.query_router - INFO - query_router.py:247 - Classifying query: my order is not received 
+2025-03-03 11:10:50,459 - httpx - INFO - _client.py:1013 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-03 11:10:50,460 - src.core.query_router - INFO - query_router.py:326 - Query classified as order with confidence 0.9
+2025-03-03 11:10:50,460 - src.agents.order_agent - INFO - order_agent.py:139 - Processing order query: my order is not received 
+2025-03-03 11:10:50,460 - src.agents.order_agent - INFO - order_agent.py:89 - Retrieving documents for query: my order is not received 
+2025-03-03 11:10:50,460 - src.utils.nlp_utils - INFO - nlp_utils.py:30 - Loading embedding model: all-MiniLM-L6-v2
+2025-03-03 11:10:50,460 - sentence_transformers.SentenceTransformer - INFO - SentenceTransformer.py:106 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-03 11:10:54,453 - sentence_transformers.SentenceTransformer - INFO - SentenceTransformer.py:212 - Use pytorch device_name: cpu
+2025-03-03 11:10:54,454 - src.utils.nlp_utils - INFO - nlp_utils.py:32 - Embedding model loaded with dimension 384
+2025-03-03 11:10:54,471 - src.agents.order_agent - INFO - order_agent.py:126 - Retrieved 5 documents
+2025-03-03 11:10:54,471 - src.core.response_generator - INFO - response_generator.py:32 - Generating response for order query with 5 documents
+2025-03-03 11:10:56,127 - httpx - INFO - _client.py:1013 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-03 11:10:56,128 - __main__ - INFO - query_1.py:75 - Query processed by order agent
+2025-03-03 11:11:45,673 - main - INFO - main.py:30 - Starting Multi-Agent System
+2025-03-03 11:11:45,678 - main - INFO - main.py:34 - Configuration loaded
+2025-03-03 11:11:45,678 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:11:45,679 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:11:45,833 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:11:45,834 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:11:45,834 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:11:45,914 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:11:45,914 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:11:45,914 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:11:46,004 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:11:46,104 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:11:46,104 - main - INFO - main.py:43 - Query router initialized
+2025-03-03 11:11:46,111 - src.interfaces.api - INFO - api.py:101 - API routes configured
+2025-03-03 11:11:46,112 - main - INFO - main.py:54 - API routes configured
+2025-03-03 11:13:55,724 - main - INFO - main.py:30 - Starting Multi-Agent System
+2025-03-03 11:13:55,728 - main - INFO - main.py:34 - Configuration loaded
+2025-03-03 11:13:55,728 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:13:55,728 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:13:55,863 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:13:55,863 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:13:55,863 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:13:55,937 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:13:55,937 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:13:55,937 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:13:56,012 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:13:56,093 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:13:56,093 - main - INFO - main.py:43 - Query router initialized
+2025-03-03 11:13:56,097 - src.interfaces.api - INFO - api.py:101 - API routes configured
+2025-03-03 11:13:56,097 - main - INFO - main.py:54 - API routes configured
+2025-03-03 11:18:59,369 - main - INFO - main.py:30 - Starting Multi-Agent System
+2025-03-03 11:18:59,373 - main - INFO - main.py:34 - Configuration loaded
+2025-03-03 11:18:59,373 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:18:59,373 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:18:59,509 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:18:59,510 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:18:59,510 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:18:59,604 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:18:59,604 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:18:59,605 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:18:59,687 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:18:59,770 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:18:59,770 - main - INFO - main.py:43 - Query router initialized
+2025-03-03 11:18:59,773 - src.interfaces.api - INFO - api.py:101 - API routes configured
+2025-03-03 11:18:59,773 - main - INFO - main.py:54 - API routes configured
+2025-03-03 11:21:04,074 - main - INFO - main.py:30 - Starting Multi-Agent System
+2025-03-03 11:21:04,078 - main - INFO - main.py:34 - Configuration loaded
+2025-03-03 11:21:04,078 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:21:04,078 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:21:04,213 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:21:04,214 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:21:04,214 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:21:04,308 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:21:04,308 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:21:04,309 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:21:04,391 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:21:04,475 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:21:04,475 - main - INFO - main.py:43 - Query router initialized
+2025-03-03 11:21:04,479 - src.interfaces.api - INFO - api.py:101 - API routes configured
+2025-03-03 11:21:04,479 - main - INFO - main.py:54 - API routes configured
+2025-03-03 11:21:27,433 - main - INFO - main.py:30 - Starting Multi-Agent System
+2025-03-03 11:21:27,438 - main - INFO - main.py:34 - Configuration loaded
+2025-03-03 11:21:27,438 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:21:27,438 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:21:27,577 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:21:27,577 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:21:27,578 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:21:27,672 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:21:27,672 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:21:27,673 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:21:27,757 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:21:27,844 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:21:27,844 - main - INFO - main.py:43 - Query router initialized
+2025-03-03 11:21:27,847 - src.interfaces.api - INFO - api.py:101 - API routes configured
+2025-03-03 11:21:27,848 - main - INFO - main.py:54 - API routes configured
+2025-03-03 11:24:19,632 - main - INFO - main.py:30 - Starting Multi-Agent System
+2025-03-03 11:24:19,636 - main - INFO - main.py:34 - Configuration loaded
+2025-03-03 11:24:19,636 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:24:19,637 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:24:19,768 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:24:19,768 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:24:19,768 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:24:19,879 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:24:19,880 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:24:19,880 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:24:20,000 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:24:20,122 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:24:20,122 - main - INFO - main.py:43 - Query router initialized
+2025-03-03 11:24:20,126 - src.interfaces.api - INFO - api.py:101 - API routes configured
+2025-03-03 11:24:20,127 - main - INFO - main.py:54 - API routes configured
+2025-03-03 11:24:49,569 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:24:49,570 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:24:49,690 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:24:49,690 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:24:49,691 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:24:49,786 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:24:49,786 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:24:49,786 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:24:49,883 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:24:49,979 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:24:49,980 - __main__ - INFO - query_1.py:255 - Query router initialized
+2025-03-03 11:25:13,350 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:25:13,351 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:25:13,522 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:25:13,522 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:25:13,522 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:25:13,640 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:25:13,640 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:25:13,641 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:25:13,757 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:25:13,873 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:25:13,874 - __main__ - INFO - query_1.py:255 - Query router initialized
+2025-03-03 11:26:07,952 - main - INFO - main.py:30 - Starting Multi-Agent System
+2025-03-03 11:26:07,956 - main - INFO - main.py:34 - Configuration loaded
+2025-03-03 11:26:07,956 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:26:07,957 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:26:08,093 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:26:08,093 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:26:08,093 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:26:08,182 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:26:08,182 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:26:08,182 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:26:08,266 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:26:08,346 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:26:08,346 - main - INFO - main.py:43 - Query router initialized
+2025-03-03 11:26:08,349 - src.interfaces.api - INFO - api.py:101 - API routes configured
+2025-03-03 11:26:08,349 - main - INFO - main.py:54 - API routes configured
+2025-03-03 11:26:20,607 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:26:20,608 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:26:20,787 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:26:20,787 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:26:20,788 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:26:20,907 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:26:20,907 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:26:20,908 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:26:21,022 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:26:21,141 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:26:21,141 - __main__ - INFO - query_1.py:255 - Query router initialized
+2025-03-03 11:26:21,164 - __main__ - ERROR - query_1.py:393 - Failed to visualize graph: failed to execute PosixPath('dot'), make sure the Graphviz executables are on your systems' PATH
+2025-03-03 11:29:41,997 - src.core.query_router - INFO - query_router.py:247 - Classifying query: my account is hack
+2025-03-03 11:29:43,430 - httpx - INFO - _client.py:1013 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-03 11:29:43,439 - src.core.query_router - INFO - query_router.py:326 - Query classified as technical with confidence 0.9
+2025-03-03 11:29:43,439 - __main__ - INFO - query_1.py:267 - Classified query as technical with confidence 0.90
+2025-03-03 11:29:43,441 - src.core.query_router - INFO - query_router.py:247 - Classifying query: my account is hack
+2025-03-03 11:29:44,927 - httpx - INFO - _client.py:1013 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-03 11:29:44,929 - src.core.query_router - INFO - query_router.py:326 - Query classified as technical with confidence 0.9
+2025-03-03 11:29:44,930 - src.agents.technical_agent - INFO - technical_agent.py:139 - Processing technical query: my account is hack
+2025-03-03 11:29:44,930 - src.agents.technical_agent - INFO - technical_agent.py:89 - Retrieving documents for query: my account is hack
+2025-03-03 11:29:44,930 - src.utils.nlp_utils - INFO - nlp_utils.py:30 - Loading embedding model: all-MiniLM-L6-v2
+2025-03-03 11:29:44,930 - sentence_transformers.SentenceTransformer - INFO - SentenceTransformer.py:106 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-03 11:29:48,333 - sentence_transformers.SentenceTransformer - INFO - SentenceTransformer.py:212 - Use pytorch device_name: cpu
+2025-03-03 11:29:48,334 - src.utils.nlp_utils - INFO - nlp_utils.py:32 - Embedding model loaded with dimension 384
+2025-03-03 11:29:48,355 - src.agents.technical_agent - INFO - technical_agent.py:126 - Retrieved 5 documents
+2025-03-03 11:29:48,355 - src.core.response_generator - INFO - response_generator.py:32 - Generating response for technical query with 5 documents
+2025-03-03 11:29:50,246 - httpx - INFO - _client.py:1013 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-03 11:29:50,248 - __main__ - INFO - query_1.py:286 - Query processed by technical agent
+2025-03-03 11:30:16,243 - main - INFO - main.py:30 - Starting Multi-Agent System
+2025-03-03 11:30:16,248 - main - INFO - main.py:34 - Configuration loaded
+2025-03-03 11:30:16,248 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:30:16,248 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:30:16,402 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:30:16,402 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:30:16,402 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:30:16,494 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:30:16,495 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:30:16,495 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:30:16,572 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:30:16,660 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:30:16,660 - main - INFO - main.py:43 - Query router initialized
+2025-03-03 11:30:16,663 - src.interfaces.api - INFO - api.py:101 - API routes configured
+2025-03-03 11:30:16,663 - main - INFO - main.py:54 - API routes configured
+2025-03-03 11:30:17,085 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:30:17,086 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:30:17,235 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:30:17,236 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:30:17,236 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:30:17,348 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:30:17,349 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:30:17,349 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:30:17,441 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:30:17,534 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:30:17,534 - __main__ - INFO - query_1.py:45 - Query router initialized
+2025-03-03 11:30:34,911 - src.core.query_router - INFO - query_router.py:247 - Classifying query: my order is not received yet
+2025-03-03 11:30:36,121 - httpx - INFO - _client.py:1013 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-03 11:30:36,130 - src.core.query_router - INFO - query_router.py:326 - Query classified as order with confidence 0.9
+2025-03-03 11:30:36,130 - __main__ - INFO - query_1.py:57 - Classified query as order with confidence 0.90
+2025-03-03 11:30:36,132 - src.core.query_router - INFO - query_router.py:247 - Classifying query: my order is not received yet
+2025-03-03 11:30:37,352 - httpx - INFO - _client.py:1013 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-03 11:30:37,355 - src.core.query_router - INFO - query_router.py:326 - Query classified as order with confidence 0.9
+2025-03-03 11:30:37,355 - src.agents.order_agent - INFO - order_agent.py:139 - Processing order query: my order is not received yet
+2025-03-03 11:30:37,355 - src.agents.order_agent - INFO - order_agent.py:89 - Retrieving documents for query: my order is not received yet
+2025-03-03 11:30:37,355 - src.utils.nlp_utils - INFO - nlp_utils.py:30 - Loading embedding model: all-MiniLM-L6-v2
+2025-03-03 11:30:37,356 - sentence_transformers.SentenceTransformer - INFO - SentenceTransformer.py:106 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-03 11:30:40,902 - sentence_transformers.SentenceTransformer - INFO - SentenceTransformer.py:212 - Use pytorch device_name: cpu
+2025-03-03 11:30:40,904 - src.utils.nlp_utils - INFO - nlp_utils.py:32 - Embedding model loaded with dimension 384
+2025-03-03 11:30:40,919 - src.agents.order_agent - INFO - order_agent.py:126 - Retrieved 5 documents
+2025-03-03 11:30:40,920 - src.core.response_generator - INFO - response_generator.py:32 - Generating response for order query with 5 documents
+2025-03-03 11:30:42,358 - httpx - INFO - _client.py:1013 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-03 11:30:42,360 - __main__ - INFO - query_1.py:76 - Query processed by order agent
+2025-03-03 11:31:14,216 - main - INFO - main.py:30 - Starting Multi-Agent System
+2025-03-03 11:31:14,220 - main - INFO - main.py:34 - Configuration loaded
+2025-03-03 11:31:14,221 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:31:14,221 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:31:14,355 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:31:14,356 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:31:14,356 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:31:14,440 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:31:14,440 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:31:14,441 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:31:14,531 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:31:14,643 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:31:14,644 - main - INFO - main.py:43 - Query router initialized
+2025-03-03 11:31:14,647 - src.interfaces.api - INFO - api.py:101 - API routes configured
+2025-03-03 11:31:14,647 - main - INFO - main.py:54 - API routes configured
+2025-03-03 11:31:42,846 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:31:42,847 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:31:43,020 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:31:43,020 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:31:43,021 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:31:43,137 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:31:43,137 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:31:43,137 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:31:43,255 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:31:43,376 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:31:43,376 - __main__ - INFO - query_assistant.py:45 - Query router initialized
+2025-03-03 11:31:51,154 - src.core.query_router - INFO - query_router.py:247 - Classifying query: your order system is too slow
+2025-03-03 11:31:52,398 - httpx - INFO - _client.py:1013 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-03 11:31:52,406 - src.core.query_router - INFO - query_router.py:326 - Query classified as technical with confidence 0.8
+2025-03-03 11:31:52,406 - __main__ - INFO - query_assistant.py:57 - Classified query as technical with confidence 0.80
+2025-03-03 11:31:52,408 - src.core.query_router - INFO - query_router.py:247 - Classifying query: your order system is too slow
+2025-03-03 11:31:53,619 - httpx - INFO - _client.py:1013 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-03 11:31:53,620 - src.core.query_router - INFO - query_router.py:326 - Query classified as technical with confidence 0.8
+2025-03-03 11:31:53,620 - src.agents.technical_agent - INFO - technical_agent.py:139 - Processing technical query: your order system is too slow
+2025-03-03 11:31:53,620 - src.agents.technical_agent - INFO - technical_agent.py:89 - Retrieving documents for query: your order system is too slow
+2025-03-03 11:31:53,620 - src.utils.nlp_utils - INFO - nlp_utils.py:30 - Loading embedding model: all-MiniLM-L6-v2
+2025-03-03 11:31:53,620 - sentence_transformers.SentenceTransformer - INFO - SentenceTransformer.py:106 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-03 11:32:58,558 - src.agents.billing_agent - INFO - billing_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/billing_index.faiss
+2025-03-03 11:32:58,558 - src.agents.billing_agent - INFO - billing_agent.py:64 - Loaded 15 billing documents
+2025-03-03 11:32:58,720 - src.agents.billing_agent - INFO - billing_agent.py:76 - BillingAgent initialized
+2025-03-03 11:32:58,721 - src.agents.technical_agent - INFO - technical_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/technical_index.faiss
+2025-03-03 11:32:58,721 - src.agents.technical_agent - INFO - technical_agent.py:64 - Loaded 15 technical documents
+2025-03-03 11:32:58,810 - src.agents.technical_agent - INFO - technical_agent.py:76 - TechnicalAgent initialized
+2025-03-03 11:32:58,810 - src.agents.order_agent - INFO - order_agent.py:48 - Loaded FAISS index from /home/vaibhav/mutli_agent_system/src/agents/../database/faiss_db/order_index.faiss
+2025-03-03 11:32:58,811 - src.agents.order_agent - INFO - order_agent.py:64 - Loaded 15 order documents
+2025-03-03 11:32:58,912 - src.agents.order_agent - INFO - order_agent.py:76 - OrderAgent initialized
+2025-03-03 11:32:59,012 - src.core.query_router - INFO - query_router.py:235 - StructuredQueryRouter initialized with all agents
+2025-03-03 11:32:59,013 - __main__ - INFO - query_assistant.py:45 - Query router initialized
+2025-03-03 11:33:04,484 - src.core.query_router - INFO - query_router.py:247 - Classifying query: my bill amout is too high
+2025-03-03 11:33:06,929 - httpx - INFO - _client.py:1013 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-03 11:33:06,938 - src.core.query_router - INFO - query_router.py:326 - Query classified as billing with confidence 0.9
+2025-03-03 11:33:06,939 - __main__ - INFO - query_assistant.py:57 - Classified query as billing with confidence 0.90
+2025-03-03 11:33:06,940 - src.core.query_router - INFO - query_router.py:247 - Classifying query: my bill amout is too high
+2025-03-03 11:33:08,162 - httpx - INFO - _client.py:1013 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-03 11:33:08,163 - src.core.query_router - INFO - query_router.py:326 - Query classified as billing with confidence 0.9
+2025-03-03 11:33:08,163 - src.agents.billing_agent - INFO - billing_agent.py:140 - Processing billing query: my bill amout is too high
+2025-03-03 11:33:08,163 - src.agents.billing_agent - INFO - billing_agent.py:89 - Retrieving documents for query: my bill amout is too high
+2025-03-03 11:33:08,163 - src.utils.nlp_utils - INFO - nlp_utils.py:30 - Loading embedding model: all-MiniLM-L6-v2
+2025-03-03 11:33:08,164 - sentence_transformers.SentenceTransformer - INFO - SentenceTransformer.py:106 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-03 11:33:12,338 - sentence_transformers.SentenceTransformer - INFO - SentenceTransformer.py:212 - Use pytorch device_name: cpu
+2025-03-03 11:33:12,340 - src.utils.nlp_utils - INFO - nlp_utils.py:32 - Embedding model loaded with dimension 384
+2025-03-03 11:33:12,356 - src.agents.billing_agent - INFO - billing_agent.py:127 - Retrieved 5 documents
+2025-03-03 11:33:13,487 - httpx - INFO - _client.py:1013 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-03 11:33:13,488 - __main__ - INFO - query_assistant.py:76 - Query processed by billing agent

@@ -1,0 +1,6 @@
+2025-03-02 11:50:04,987 - __main__ - ERROR - main_1.py:38 - GROQ_API_KEY not found in environment variables
+2025-03-02 12:16:13,162 - root - ERROR - ingest_script.py:77 - Failed to process billing domain data
+2025-03-02 12:16:13,162 - root - ERROR - ingest_script.py:77 - Failed to process technical domain data
+2025-03-02 12:16:13,162 - root - ERROR - ingest_script.py:77 - Failed to process order domain data
+2025-03-02 12:16:13,162 - root - ERROR - ingest_script.py:122 - Failed to process domains: billing, technical, order
+2025-03-02 13:02:34,615 - __main__ - ERROR - cli_client.py:81 - Error processing query: 'bool' object has no attribute 'substitute'

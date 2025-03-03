@@ -1,0 +1,16 @@
+id,content,category,date
+1,"To reset your password, click on 'Forgot Password' on the login screen and follow the instructions sent to your email.",connectivity,2025-01-24
+2,The app requires at least iOS 14 or Android 8.0 to function correctly.,app,2025-02-09
+3,Location services must be enabled for the map feature to work properly.,connectivity,2024-12-29
+4,Data sync issues can usually be resolved by logging out and logging back in.,connectivity,2025-01-22
+5,"To backup your data, go to Settings > Backup & Sync and toggle 'Auto Backup' to ON.",general,2024-12-15
+6,The desktop application is compatible with Windows 10/11 and macOS 10.15 or later.,general,2025-02-02
+7,"To enable dark mode, go to Settings > Display > Theme and select 'Dark'.",general,2024-12-11
+8,"If the app is crashing, try clearing the cache in Settings > Storage > Clear Cache.",account,2025-01-28
+9,Two-factor authentication can be enabled in Settings > Security > 2FA.,device,2024-12-28
+10,Bluetooth connectivity issues can often be resolved by turning Bluetooth off and on again.,app,2025-01-18
+11,"To update the app, visit the App Store or Google Play Store and check for updates.",device,2025-01-09
+12,The system automatically logs you out after 30 minutes of inactivity for security reasons.,account,2025-02-09
+13,Video calls require at least 2 Mbps upload and download speed for HD quality.,general,2025-01-03
+14,"To export your data, go to Settings > Privacy > Export Data and select the desired format.",app,2025-01-03
+15,The maximum file upload size is 50MB per file.,device,2024-12-31

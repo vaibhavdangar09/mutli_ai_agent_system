@@ -1,0 +1,16 @@
+id,content,category,date
+1,Order #12345 was placed on 2025-01-15 and includes 3 items totaling $79.99.,general,2025-02-04
+2,Order #23456 was placed on 2025-01-20 and includes 1 item totaling $129.99.,shipping,2025-02-08
+3,Order #34567 was placed on 2025-01-25 and includes 5 items totaling $299.95.,general,2025-01-20
+4,Order #45678 was placed on 2025-01-30 and includes 2 items totaling $59.98.,orders,2025-01-08
+5,Order #56789 was placed on 2025-02-05 and includes 4 items totaling $149.96.,general,2025-01-10
+6,Standard shipping takes 3-5 business days and costs $5.99.,shipping,2025-01-01
+7,Express shipping takes 1-2 business days and costs $15.99.,orders,2025-02-23
+8,Overnight shipping is guaranteed next business day and costs $29.99.,orders,2024-12-11
+9,International shipping takes 7-14 business days and costs $24.99.,tracking,2024-12-13
+10,All orders are processed within 24 hours of being placed.,orders,2024-12-14
+11,Orders placed after 2 PM may not be processed until the next business day.,general,2025-01-29
+12,Order tracking information is sent via email once the order has shipped.,orders,2025-02-26
+13,Shipping to PO boxes is available for standard shipping only.,general,2025-02-11
+14,Orders over $100 qualify for free standard shipping.,shipping,2025-01-12
+15,Backorders typically ship within 3-4 weeks of the order date.,general,2025-01-18

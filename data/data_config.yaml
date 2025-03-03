@@ -1,0 +1,89 @@
+# Data Configuration for Multi-Agent RAG System
+
+# Domain-specific data sources
+domains:
+  billing:
+    description: "Billing-related data sources"
+    sources:
+      - name: "billing_knowledge_base"
+        path: "raw_data/billing_data.csv"
+        domain: "billing"
+        format: "csv"
+        text_column: "content"
+        id_column: "id"
+        chunk_size: 512
+        chunk_overlap: 50
+      - name: "payment_faq"
+        path: "raw_data/payment_faq.csv"
+        domain: "billing"
+        format: "csv"
+        text_column: "answer"
+        id_column: "question_id"
+        chunk_size: 512
+        chunk_overlap: 50
+  
+  technical:
+    description: "Technical support data sources"
+    sources:
+      - name: "technical_knowledge_base"
+        path: "raw_data/technical_data.csv"
+        domain: "technical"
+        format: "csv"
+        text_column: "content"
+        id_column: "id"
+        chunk_size: 768
+        chunk_overlap: 100
+      - name: "product_documentation"
+        path: "raw_data/product_docs.csv"
+        domain: "technical"
+        format: "csv"
+        text_column: "documentation"
+        id_column: "doc_id"
+        chunk_size: 768
+        chunk_overlap: 100
+      - name: "technical_faq"
+        path: "raw_data/technical_faq.csv"
+        domain: "technical"
+        format: "csv"
+        text_column: "answer"
+        id_column: "question_id"
+        chunk_size: 512
+        chunk_overlap: 50
+  
+  order:
+    description: "Order management data sources"
+    sources:
+      - name: "order_knowledge_base"
+        path: "raw_data/order_data.csv"
+        domain: "order"
+        format: "csv"
+        text_column: "content"
+        id_column: "id"
+        chunk_size: 512
+        chunk_overlap: 50
+      - name: "shipping_policies"
+        path: "raw_data/shipping_policies.csv"
+        domain: "order"
+        format: "csv"
+        text_column: "policy_text"
+        id_column: "policy_id"
+        chunk_size: 512
+        chunk_overlap: 50
+      - name: "return_policies"
+        path: "raw_data/return_policies.csv"
+        domain: "order"
+        format: "csv"
+        text_column: "policy_text"
+        id_column: "policy_id"
+        chunk_size: 512
+        chunk_overlap: 50
+
+# Processing parameters
+processing:
+  embedding_model: "all-MiniLM-L6-v2"
+  embedding_dimension: 384
+  faiss_index_type: "flat"  # Options: flat, ivf, hnsw
+  min_chunk_size: 100  # Minimum characters per chunk
+  max_chunk_size: 1024  # Maximum characters per chunk
+  default_chunk_size: 512  # Default chunk size
+  default_chunk_overlap: 50  # Default overlap

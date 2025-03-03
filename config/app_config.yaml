@@ -1,0 +1,62 @@
+# Application Configuration
+
+app:
+  name: "Multi-Agent RAG System"
+  version: "1.0.0"
+  debug: true
+  host: "0.0.0.0"
+  port: 8000
+
+# LLM Configuration
+llm:
+  provider: "groq"
+  model: "llama-3.3-70b-versatile"
+  temperature: 0.3
+  max_tokens: 1024
+  timeout: 30
+
+# Agent Configuration
+agents:
+  billing:
+    enabled: true
+    top_k: 5
+    threshold: 0.7
+  technical:
+    enabled: true
+    top_k: 7
+    threshold: 0.65
+  order:
+    enabled: true
+    top_k: 5
+    threshold: 0.7
+
+# Vector Database Configuration
+faiss:
+  index_type: "flat"  # Options: flat, ivf, hnsw
+  metric: "l2"
+  nprobe: 10  # For IVF indices
+  ef_search: 128  # For HNSW indices
+
+# Data Processing Configuration
+data_processing:
+  chunk_size: 512
+  chunk_overlap: 50
+  embedding_model: "all-MiniLM-L6-v2"
+
+# Routing Configuration
+routing:
+  default_agent: "technical"
+  confidence_threshold: 0.6
+
+# API Configuration
+api:
+  rate_limit: 100  # requests per minute
+  timeout: 30  # seconds
+  cors_origins:
+    - "*"  # Replace with specific origins in production
+
+# Monitoring
+monitoring:
+  query_logging: true
+  performance_tracking: true
+  log_responses: true

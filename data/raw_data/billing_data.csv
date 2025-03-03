@@ -1,0 +1,16 @@
+id,content,category,date
+1,"The Basic Plan costs $49 per month and includes 5GB data, 100 minutes, and unlimited texts.",payments,2025-02-28
+2,"The Standard Plan costs $79 per month and includes 15GB data, 500 minutes, and unlimited texts.",general,2025-01-15
+3,"The Premium Plan costs $129 per month and includes 50GB data, unlimited minutes, and unlimited texts.",plans,2025-02-16
+4,"The Family Plan costs $199 per month and includes 100GB shared data, unlimited minutes, and unlimited texts for up to 5 lines.",refunds,2024-12-17
+5,"The Business Plan costs $299 per month and includes 200GB shared data, unlimited minutes, and unlimited texts for up to 10 lines.",plans,2025-01-22
+6,"The Enterprise Plan costs $599 per month and includes 500GB shared data, unlimited minutes, and unlimited texts for up to 25 lines.",plans,2025-01-15
+7,"The Ultimate Plan costs $999 per month and includes unlimited data, unlimited minutes, and unlimited texts for up to 50 lines.",plans,2025-02-16
+8,"The $331 Premium Plus Plan includes unlimited data, unlimited minutes, unlimited texts, free international roaming, and priority customer support.",general,2025-01-06
+9,All plans are billed monthly and include taxes and fees.,general,2025-02-15
+10,Late payments incur a $15 fee and may result in service interruption.,general,2024-12-09
+11,Customers can upgrade their plan at any time without penalty.,payments,2024-12-29
+12,Downgrading a plan takes effect at the end of the current billing cycle.,refunds,2025-02-22
+13,Plan prices are subject to change with 30 days notice.,general,2025-02-02
+14,Refunds are processed within 7-10 business days.,plans,2025-01-25
+15,Credit card is the preferred payment method for all plans.,plans,2025-02-27
